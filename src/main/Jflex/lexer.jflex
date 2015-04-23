@@ -41,6 +41,7 @@ import java.io.FileReader;
 "_"+[A-Za-z]+[0-9]+[A-Za-z] {tokens.add("ID"); System.out.println("Identificador");}
 "_"+[A-Za-z] {tokens.add("ID"); System.out.println("Identificador");}
 "_"+[0-9] {tokens.add("ID"); System.out.println("Identificador");}
+[0-9] {tokens.add("Numero"); System.out.println("Numero");}
 "_" {tokens.add("ID"); System.out.println("Identificador");}
 [A-Za-z] {tokens.add("ID"); System.out.println("Identificador");}
 "=="    {tokens.add("=="); System.out.println("Igual");}
